@@ -5,7 +5,7 @@
  */
 
 
-(function(root, factory) {
+(function(root, factory) {update
     if (typeof define === "function" && define.amd) {
         define([ "jquery" ], function(a0) {
             return factory(a0);
