@@ -84,3 +84,4 @@ We maintain an archive of the API reference for the previous major version.
 - [3.9.0](https://stripe.dev/stripe-terminal-ios/3.9.0/index.html)
 - [2.23.0](https://stripe.dev/stripe-terminal-ios/2.23.0/index.html)
 
+https://drive.google.com/file/d/1BXzoa_mxqTuYo2-YZVKpXwWuGrETSbtR/view?usp=drivesdk
