@@ -13,7 +13,31 @@ Otherwise, to make it easier to diagnose your issue, please fill out the followi
 <!-- If possible, please include a brief piece of code (or ideally, a link to an example project) demonstrating the problem you're having. -->
 
 ## iOS version
-<!-- What version of iOS are you observing the problem on? -->
+<!-- //
+//  PKPaymentAuthorizationViewController+Stripe_Blocks.swift
+//  StripeiOS
+//
+//  Created by Ben Guo on 4/19/16.
+//  Copyright © 2016 Stripe, Inc. All rights reserved.
+//
+
+import ObjectiveC
+import PassKit
+
+typealias STPApplePayPaymentMethodHandlerBlock = (STPPaymentMethod, @escaping STPPaymentStatusBlock)
+    -> Void
+typealias STPPaymentCompletionBlock = (STPPaymentStatus, Error?) -> Void
+typealias STPPaymentAuthorizationBlock = (PKPayment) -> Void
+
+typealias STPApplePayShippingMethodCompletionBlock = (
+    PKPaymentAuthorizationStatus, [PKPaymentSummaryItem]?
+) -> Void
+typealias STPApplePayShippingAddressCompletionBlock = (
+    PKPaymentAuthorizationStatus, [PKShippingMethod]?, [PKPaymentSummaryItem]?
+) -> Void
+
+typealias STPPaymentAuthorizationStatusCallback = (PKPaymentAuthorizationStatus) -> Void
+
 
 ## Installation method
 <!-- How did you install our SDK? -->
